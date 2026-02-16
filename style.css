@@ -1,14 +1,16 @@
+/* =========================
+   BODY
+========================= */
 body{
     margin:0;
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     background: linear-gradient(135deg, #f76c9f, #ff9a9e);
     font-family: 'Cormorant Garamond', serif;
 }
 
-/* Carta */
+/* =========================
+   CARTA
+========================= */
 .carta{
     background:#fff;
     max-width:700px;
@@ -18,25 +20,33 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,0.2);
     position:relative;
     z-index:2;
+    margin:60px auto; /* CENTRADO REAL */
+    text-align:center;
 }
 
-/* Título */
+/* =========================
+   TÍTULO
+========================= */
 h1{
     font-family:'Dancing Script', cursive;
     font-size: clamp(30px, 5vw, 48px);
     color:#b3003c;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
 
-/* Texto */
+/* =========================
+   TEXTO
+========================= */
 p{
     font-size:22px;
     line-height:1.8;
-    margin-bottom:25px;
+    margin-bottom:20px;
     color:#333;
 }
 
-/* Firma */
+/* =========================
+   FIRMA
+========================= */
 .firma{
     font-family:'Dancing Script', cursive;
     font-size:28px;
@@ -44,29 +54,35 @@ p{
     color:#b3003c;
 }
 
-/* Contador */
+/* =========================
+   CONTADOR
+========================= */
 .contador{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
 }
 
 #tiempo{
     color:#d1004a;
     font-weight:600;
-    font-size:20px;
+    font-size:18px;
 }
 
-/* ✨ Brillo letras */
+/* =========================
+   BRILLO
+========================= */
 .brillo{
     animation:brillar 3s infinite alternate;
 }
 
 @keyframes brillar{
-    from{text-shadow:0 0 5px rgba(255,255,255,0.4);}
-    to{text-shadow:0 0 20px rgba(255,255,255,0.9);}
+    from{ text-shadow:0 0 5px rgba(255,255,255,0.4); }
+    to{ text-shadow:0 0 20px rgba(255,255,255,0.9); }
 }
 
-/* 🌸 Elementos cayendo */
+/* =========================
+   PETALOS
+========================= */
 .petalos span{
     position:absolute;
     animation:caer linear infinite;
@@ -78,16 +94,16 @@ p{
         transform:translateY(-120vh) rotate(0deg);
         opacity:0;
     }
-    10%{
-        opacity:1;
-    }
+    10%{ opacity:1; }
     to{
         transform:translateY(120vh) rotate(360deg);
         opacity:0.8;
     }
 }
 
-/* 💖 Corazones finales */
+/* =========================
+   CORAZONES
+========================= */
 .corazones-final span{
     position:absolute;
     font-size:25px;
@@ -95,19 +111,23 @@ p{
 }
 
 @keyframes subir{
-    from{transform:translateY(0);opacity:1;}
-    to{transform:translateY(-150px);opacity:0;}
+    from{ transform:translateY(0); opacity:1; }
+    to{ transform:translateY(-150px); opacity:0; }
 }
 
-/* 🎀 Moños */
+/* =========================
+   MOÑOS
+========================= */
 .moño{
     position:absolute;
-    font-size:45px;
+    font-size:40px;
     z-index:3;
 }
 
 .moño1{ top:20px; left:30px; }
 .moño2{ bottom:20px; right:30px; }
+
+
 
 
 
