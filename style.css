@@ -23,7 +23,7 @@ body{
 /* Título */
 h1{
     font-family:'Dancing Script', cursive;
-    font-size: clamp(26px, 5vw, 48px);
+    font-size: clamp(26px, 5vw, 26px);
     color:#b3003c;
     margin-bottom:40px;
 
@@ -107,6 +107,7 @@ p{
 
 .moño1{ top:20px; left:30px;}
 .moño2{ bottom:20px; right:30px;}
+
 
 
 
