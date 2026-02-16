@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffc3a0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Carta */
+.carta{
+    background:#fff;
+    width:760px;
+    padding:70px;
+    border-radius:25px;
+    box-shadow:0 40px 80px rgba(0,0,0,0.25);
+    position:relative;
+    z-index:2;
+}
+
+/* Título */
+h1{
+    font-family:'Dancing Script', cursive;
+    font-size:65px;
+
+    color:#b3003c;
+    margin-bottom:40px;
+}
+
+/* Texto */
+p{
+    font-size:26px;
+    line-height:1.8;
+    margin-bottom:25px;
+    color:#333;
+}
+
+/* Firma */
+.firma{
+    font-family:'Dancing Script', cursive;
+    font-size:30px;
+    margin-top:30px;
+    color:#b3003c;
+}
+
+/* Contador */
+.contador{
+    margin-top:40px;
+    font-size:25px;
+}
+
+#tiempo{
+    color:#d1004a;
+    font-weight:600;
+    font-size:22px;
+}
+
+/* ✨ Brillo letras */
+.brillo{
+    animation:brillar 3s infinite alternate;
+}
+
+@keyframes brillar{
+    from{text-shadow:0 0 5px rgba(255,255,255,0.4);}
+    to{text-shadow:0 0 20px rgba(255,255,255,0.9);}
+}
+
+/* 🌸 Elementos cayendo */
+.petalos span{
+    position:absolute;
+    animation:caer linear infinite;
+    pointer-events:none;
+}
+
+@keyframes caer{
+    from{
+        transform:translateY(-120vh) rotate(0deg);
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(120vh) rotate(360deg);
+        opacity:0.8;
+    }
+}
+
+/* 💖 Corazones finales */
+.corazones-final span{
+    position:absolute;
+    font-size:25px;
+    animation:subir 6s linear forwards;
+}
+
+@keyframes subir{
+    from{transform:translateY(0);opacity:1;}
+    to{transform:translateY(-150px);opacity:0;}
+}
+
+/* 🎀 Moños */
+.moño{
+    position:absolute;
+    font-size:45px;
+    z-index:3;
+}
+
+.moño1{ top:20px; left:30px;}
+.moño2{ bottom:20px; right:30px;}
