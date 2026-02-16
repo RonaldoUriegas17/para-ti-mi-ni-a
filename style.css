@@ -8,7 +8,6 @@ body{
     font-family: 'Cormorant Garamond', serif;
 }
 
-
 /* Carta */
 .carta{
     background:#fff;
@@ -17,20 +16,21 @@ body{
     padding:40px;
     border-radius:25px;
     box-shadow:0 20px 60px rgba(0,0,0,0.2);
+    position:relative;
+    z-index:2;
 }
-
-
 
 /* Título */
 h1{
     font-family:'Dancing Script', cursive;
-    font-size: clamp(26px, 5vw, 26px);
+    font-size: clamp(30px, 5vw, 48px);
     color:#b3003c;
     margin-bottom:40px;
+}
 
 /* Texto */
 p{
-    font-size:26px;
+    font-size:22px;
     line-height:1.8;
     margin-bottom:25px;
     color:#333;
@@ -39,7 +39,7 @@ p{
 /* Firma */
 .firma{
     font-family:'Dancing Script', cursive;
-    font-size:30px;
+    font-size:28px;
     margin-top:30px;
     color:#b3003c;
 }
@@ -47,13 +47,13 @@ p{
 /* Contador */
 .contador{
     margin-top:40px;
-    font-size:25px;
+    font-size:22px;
 }
 
 #tiempo{
     color:#d1004a;
     font-weight:600;
-    font-size:22px;
+    font-size:20px;
 }
 
 /* ✨ Brillo letras */
@@ -106,8 +106,10 @@ p{
     z-index:3;
 }
 
-.moño1{ top:20px; left:30px;}
-.moño2{ bottom:20px; right:30px;}
+.moño1{ top:20px; left:30px; }
+.moño2{ bottom:20px; right:30px; }
+
+
 
 
 
